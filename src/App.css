@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(245, 243, 243);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  position: fixed;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: auto;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  margin-right: 5rem;
+  font-size: 1.4rem;
+}
+
+.nav-container h1 {
+  margin: auto 20rem;
+}
+.nav-container h1:hover {
+  cursor: pointer;
+}
+
+.switch-item {
+  position: absolute;
+  top: 12rem;
+}
+
+.product-container {
+  width: 200px;
+  height: 250px;
+  background-color: #fff;
+  margin: 5rem 5rem;
+  border-radius: 20px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all ease 0.4s;
+}
+
+.product-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.1);
+}
+
+.product-container img {
+  width: 100px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-container h3 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product-container p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product-container button {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0e1cc7;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.product-container button:hover {
+  color: #0e1cc7;
+  border: 1px solid #0e1cc7;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.product-container button:focus {
+  outline: none;
+}
+
+.product-layout {
+  width: 70%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+}
+
+.filter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+}
+
+.filter select {
+  border: none;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+}
+
+.filter select:focus {
+  background-color: #0e1cc7;
+  outline: none;
+  color: #fff;
+}
+
+.about {
+  overflow: hidden;
+  width: 100vw;
+  position: fixed;
+  top: 30%;
+  left: 1000px;
+  transform: translateY(-50%);
+}
+
+.about p {
+  margin-top: 100px;
+}
